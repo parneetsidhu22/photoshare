@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+:root{
+    --primary-color: #1877f2;
+    --background-color: #f0f2f5;
+}
+
+*{
+    font-family: "Segoe UI","Liberation Sans",sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:var(--background-color);
+}
+
+.flex{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
