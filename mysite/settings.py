@@ -29,7 +29,7 @@ DEBUG = False
 if DEBUG == True:
     ALLOWED_HOSTS = ["192.168.1.23","127.0.0.1"]
 else:
-    ALLOWED_HOSTS = ["http://projectphotoshare.pythonanywhere.com/"]
+    ALLOWED_HOSTS = ["projectphotoshare.herokuapp.com"]
     
 
 # Application definition
@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
 
-    #'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -132,7 +132,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-#STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATIC_URL = '/static/'
 
